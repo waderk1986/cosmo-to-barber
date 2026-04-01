@@ -38,7 +38,8 @@
     "eslint": "latest",
     "eslint-plugin-astro": "latest",
     "prettier": "latest",
-    "prettier-plugin-astro": "latest"
+    "prettier-plugin-astro": "latest",
+    "typescript": "^6.0.2"
   },
   "overrides": {
     "react": "18.3.1",
