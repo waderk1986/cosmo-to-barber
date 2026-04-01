@@ -9,9 +9,39 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint src/",
+    "format": "prettier --write src/"
   },
   "dependencies": {
-    "astro": "^6.1.2"
+    "@astrojs/react": "^5.0.2",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.17.10",
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^6.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.7.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.2",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.169.0",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+    "eslint-plugin-astro": "latest",
+    "prettier": "latest",
+    "prettier-plugin-astro": "latest"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }
