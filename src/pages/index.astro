@@ -16,6 +16,7 @@ import '../styles/global.css'
       name="description"
       content="Two-week crossover course for licensed cosmetologists seeking Colorado barbering licensure. June 15–26, 2026. $650. Apply now."
     />
+    <link rel="icon" type="image/png" href="/images/black-logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -212,6 +213,27 @@ import '../styles/global.css'
         font-size: 0.9rem;
         line-height: 1.7;
       }
+      .salon-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+        padding: 0.6rem 1rem;
+        background: rgba(0, 128, 128, 0.06);
+        border: 1.5px solid rgba(0, 128, 128, 0.2);
+        border-radius: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #008080;
+        text-decoration: none;
+        transition:
+          background 0.2s,
+          border-color 0.2s;
+      }
+      .salon-link:hover {
+        background: rgba(0, 128, 128, 0.1);
+        border-color: rgba(0, 128, 128, 0.35);
+      }
 
       /* ── HOW TO APPLY ── */
       .steps {
@@ -341,6 +363,15 @@ import '../styles/global.css'
       .cost-row em {
         font-style: italic;
       }
+      .cost-row a {
+        font-style: normal;
+        font-weight: 600;
+        color: #008080;
+        text-decoration: none;
+      }
+      .cost-row a:hover {
+        text-decoration: underline;
+      }
 
       /* ── BUTTONS ── */
       .btn-primary {
@@ -412,7 +443,6 @@ import '../styles/global.css'
       }
     </style>
   </head>
-  <link rel="icon" type="image/png" href="/images/black-logo.png" />
   <body>
     <a href="#main" class="sr-only">Skip to main content</a>
 
@@ -438,8 +468,8 @@ import '../styles/global.css'
               <h3 class="card-title teal">Cosmetology</h3>
               <p class="card-body">
                 You already have the license, the training, and the client
-                skills. This course builds on everything you know with no
-                starting over, and no redundancy.
+                skills. This course builds on everything you know — no starting
+                over, no redundancy.
               </p>
               <div class="card-rows">
                 <div class="card-row">
@@ -494,18 +524,20 @@ import '../styles/global.css'
               <h3>Career-ready in two weeks</h3>
               <p>
                 No semester-long commitment. Full-day, in-seat instruction from
-                June 15 through June 26. Then you sit for the exam. Most
+                June 15 through June 26 — then you sit for the exam. Most
                 graduates are dual-licensed before July.
               </p>
             </div>
             <div class="reason">
               <div class="reason-num" aria-hidden="true">02</div>
-              <h3>$650 - No hidden costs</h3>
+              <h3>$650 — no hidden costs</h3>
               <p>
                 The course fee covers tuition and instruction. You need a Level
-                3 straight razor (~$22 at saloncentric.com) and the required
-                textbook. That's it.
+                3 straight razor and the required textbook. That's it.
               </p>
+              <a href="https://www.saloncentric.com" target="_blank" rel="noopener noreferrer" class="salon-link">
+                Shop straight razors at SalonCentric →
+              </a>
             </div>
             <div class="reason">
               <div class="reason-num" aria-hidden="true">03</div>
@@ -542,12 +574,13 @@ import '../styles/global.css'
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   stroke-width="1.5"
-                  ><path
+                >
+                  <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
-                  ></path></svg
-                >
+                  ></path>
+                </svg>
               </div>
               <h3>Active Cosmetology License</h3>
               <p>
@@ -565,12 +598,13 @@ import '../styles/global.css'
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   stroke-width="1.5"
-                  ><path
+                >
+                  <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15A2.25 2.25 0 002.25 6.75v10.5A2.25 2.25 0 004.5 19.5z"
-                  ></path></svg
-                >
+                  ></path>
+                </svg>
               </div>
               <h3>Government-Issued Photo ID</h3>
               <p>
@@ -588,12 +622,13 @@ import '../styles/global.css'
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   stroke-width="1.5"
-                  ><path
+                >
+                  <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.636 50.636 0 00-2.658-.813A59.906 59.906 0 0112 3.493a59.903 59.903 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  ></path></svg
-                >
+                  ></path>
+                </svg>
               </div>
               <h3>High School Diploma or GED</h3>
               <p>A copy of your high school diploma or GED certificate.</p>
@@ -607,12 +642,24 @@ import '../styles/global.css'
                 documents ready to upload.
               </p>
             </div>
-            <GetStartedButton
-              client:visible
+            <a
               href="https://tcr.populiweb.com/router/admissions/onlineapplications/index?application_form=14"
+              class="btn-primary"
             >
               Start Your Application
-            </GetStartedButton>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 8h10M9 4l4 4-4 4"></path>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
@@ -643,18 +690,28 @@ import '../styles/global.css'
                   <span>Required textbook</span><em>Not included</em>
                 </div>
                 <div class="cost-row">
-                  <span>Level 3 straight razor</span><em
-                    >~$22 at saloncentric.com</em
-                  >
+                  <span>Level 3 straight razor</span>
+                  <a href="https://www.saloncentric.com" target="_blank" rel="noopener noreferrer" style="font-style:normal; font-weight:600; color:#008080; text-decoration:none;">Shop at SalonCentric →</a>
                 </div>
               </div>
-              <GetStartedButton
-                client:visible
+              <a
                 href="https://tcr.populiweb.com/router/admissions/onlineapplications/index?application_form=14"
-                className="!w-full !justify-between !rounded-xl"
+                class="btn-primary btn-full"
               >
                 Apply for this course
-              </GetStartedButton>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
